@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: violet;
+    text-align: center;
+    padding: 2em;
+    color: white;
+    
+}
+.title{
+    font-size: 3em;
+
+    margin-bottom: 2em;
+    color: black;
+}
+.units{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+
+}
+.panel{
+    height: 13em;
+    min-width: 15em;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(82, 17, 232, 0.6);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.panel:nth-child(1){
+    background-color: rgb(118, 235, 253);
+}
+.panel:nth-child(2){
+    background-color: rgb(235, 116, 32);
+}
+.panel:nth-child(3){
+    background-color: rgb(58, 239, 42);
+}
+
+.bg-unit{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10em;
+    z-index: 0;
+   
+    pointer-events: none;
+}
+.panel:nth-child(1) .bg-unit{
+    color: rgb(26, 219, 248);
+}
+.panel:nth-child(2) .bg-unit{
+    color: rgb(250, 153, 84);
+}
+.panel:nth-child(3) .bg-unit{
+    color: rgb(160, 245, 152);
+}
+.panel h2, .panel input{
+   position: relative;
+}
+.panel h2{
+    text-align: center;
+    padding: 0.3em;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.panel input:focus{
+    outline: none;
+}
+.panel input{
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    width:4em;
+    height: 2em;
+    font-size: 3em;
+    
+    text-align: center;
+    color: rgb(15, 14, 14);
+}
